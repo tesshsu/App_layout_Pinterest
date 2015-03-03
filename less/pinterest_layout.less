@@ -1,11 +1,8 @@
 /**********customeColume style css for yowoo technology
 this is generally screen size for google Nexus 5 360*640px
 *************************/
-@import "pinterest_style_version3";
-
-
 #bodyall{
-    font-family:@font-family;
+    font-family: Microsoft JhengHei;
 	background-color: #eee;
 }
 
@@ -65,169 +62,11 @@ this is generally screen size for google Nexus 5 360*640px
   padding-right: 5px;
 }
 
-/*hover animation*/
-/*---------------*/
-/***** Zoe *****/
-/*---------------*/
-
-figure.effect-zoe figcaption {
-	top: auto;
-	bottom: 0;
-	padding: 0.1em;
-	height: 0em;
-	color: #3c4a50;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-}
-
-figure.effect-zoe h2 {
-	float: left;
-}
-
-figure.effect-zoe p.description {
-	position: absolute;
-	bottom: -0.6em;
-	padding: 1em;
-	color: #888;
-	text-transform: none;
-	display:block;
-	background-color: #fff;
-	width: 100%;
-	font-size: 60%;
-	font-weight: bold;
-	opacity: 0;
-	margin-left: -1px;
-	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
-}
-
-figure.effect-zoe h2,
-figure.effect-zoe p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
-}
-
-figure.effect-zoe p.icon-links a span::before {
-	display: inline-block;
-	padding: 8px 10px;
-	font-family: 'feathericons';
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-eye::before {
-	content: '\e000';
-}
-
-.icon-paper-clip::before {
-	content: '\e001';
-}
-
-.icon-heart::before {
-	content: '\e024';
-}
-
-figure.effect-zoe h2 {
-	display: inline-block;
-}
-
-figure.effect-zoe:hover p.description {
-	opacity: 1;
-}
-
-figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
-figure.effect-zoe:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	width: 178px;
-}
-
-figure.effect-zoe:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
-
-figure.effect-zoe:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
 /* query media part for 320px */
-
 @media screen and ( max-width: 320px ) {
-    #bodyall{
-    width:300px;
-    }
 	.container-fluid{
-	  margin-top: -60px;
-	}
-	
-  .hdBanner{
-  height: 100px;
-  width: 320px;
-  }
-  
-  .hdBanner h3{
-    font-size: 2em;
-    padding-top: 50px;
-  }
-  ul#horizontal-list {
-	min-width: 350px;
-	margin-left:-70px;
-	}
- 
-  
-  ul#horizontal-list li img {
-	width: 152px;
-	height: 130px;
-  }
-  figure.effect-zoe p.description{
-    width: 150px;
-  }
-  figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
-figure.effect-zoe:hover p.icon-links a {
-	width: 0px;
-}
+	  margin-top: 0;
+	} 
 }
 
 
-/*for mouseover affect*/
-li {
-    list-style-type: none;
-    padding: 0;
-}
-li:hover {
-    background: yellow;
-}
-
-.animate-show {
-    -webkit-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-    opacity: 1;
-}
-
-.animate-show.ng-hide-add,
-.animate-show.ng-hide-remove {
-    display: inline-block !important;
-}
-.animate-show.ng-hide {
-    opacity: 0;
-}

@@ -1,7 +1,123 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    set style less library for yowoo orderSong version 3.0
-  ---------------------------------------------------*/
-#bodyall{font-family:Microsoft JhengHei;background-color:#eee}.panel{margin-top:30px;margin-left:-20px;background-color:#fefdfa;position:fixed;z-index:999;width:100%}.nav li a{padding:5px 10px}.topInside{margin-top:15px}.logo img{padding:0 15px;margin-top:-5px;padding-bottom:5px}.container-fluid{margin-top:-30px;margin-left:20px;padding:0}.flowContent{margin-top:100px;margin-left:-18px}.flowContent img{border-radius:5px}.list-group-item{padding:0}.list-group-item p{padding:10px}.list-group-item h5{font-weight:600;margin-left:75px;margin-top:-30px}.member_pic{padding:10px}.listLeft{padding-left:5px;padding-right:5px}.listRight{padding-left:5px;padding-right:5px}figure.effect-zoe figcaption{top:auto;bottom:0;padding:.1em;height:0;color:#3c4a50;-webkit-transition:-webkit-transform .35s;transition:transform .35s;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}figure.effect-zoe h2{float:left}figure.effect-zoe p.description{position:absolute;bottom:-.6em;padding:1em;color:#888;text-transform:none;display:block;background-color:#fff;width:100%;font-size:60%;font-weight:700;opacity:0;margin-left:-1px;-webkit-backface-visibility:hidden;-webkit-transition:opacity .35s;transition:opacity .35s;-webkit-backface-visibility:hidden}figure.effect-zoe h2,figure.effect-zoe p.icon-links a{-webkit-transition:-webkit-transform .35s;transition:transform .35s;-webkit-transform:translate3d(0,200%,0);transform:translate3d(0,200%,0)}figure.effect-zoe p.icon-links a span::before{display:inline-block;padding:8px 10px;font-family:'feathericons';speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-eye::before{content:'\e000'}.icon-paper-clip::before{content:'\e001'}.icon-heart::before{content:'\e024'}figure.effect-zoe h2{display:inline-block}figure.effect-zoe:hover p.description{opacity:1}figure.effect-zoe:hover figcaption,figure.effect-zoe:hover h2,figure.effect-zoe:hover p.icon-links a{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);width:178px}figure.effect-zoe:hover h2{-webkit-transition-delay:.05s;transition-delay:.05s}figure.effect-zoe:hover p.icon-links a:nth-child(3){-webkit-transition-delay:.1s;transition-delay:.1s}figure.effect-zoe:hover p.icon-links a:nth-child(2){-webkit-transition-delay:.15s;transition-delay:.15s}figure.effect-zoe:hover p.icon-links a:first-child{-webkit-transition-delay:.2s;transition-delay:.2s}@media screen and (max-width: 320px){#bodyall{ width:300px}.container-fluid{margin-top:-60px}.hdBanner{height:100px;width:320px}.hdBanner h3{font-size:2em;padding-top:50px}ul#horizontal-list{min-width:350px;margin-left:-70px}ul#horizontal-list li img{width:152px;height:130px}figure.effect-zoe p.description{width:150px}figure.effect-zoe:hover figcaption,figure.effect-zoe:hover h2,figure.effect-zoe:hover p.icon-links a{width:0}}li{list-style-type:none;padding:0}li:hover{background:#ff0}.animate-show{-webkit-transition:all linear .5s;transition:all linear .5s;opacity:1}.animate-show.ng-hide-add,.animate-show.ng-hide-remove{display:inline-block!important}.animate-show.ng-hide{opacity:0}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/**********customeColume style css for yowoo technology
+this is generally screen size for google Nexus 5 360*640px
+*************************/
+#bodyall{
+    font-family: Microsoft JhengHei;
+    background-color: #eee;
+}
+
+.panel{
+    margin-top: 30px;
+    margin-left: -20px;
+    background-color: #fefdfa;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.nav li a{
+    padding: 5px 10px;
+}
+.topInside{
+    margin-top: 15px;
+}
+.logo img{
+    padding: 0 15px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+/* down Part*/
+.container-fluid{
+    margin-top: -30px;
+    margin-left: 20px;
+    padding: 0px;
+}
+.flowContent{
+    margin-top: 100px;
+    margin-left: -20px;
+    border-radius: 5px;
+}
+
+.list-group-item{
+    padding: 0;
+}
+.list-group-item p{
+    padding: 10px;
+}
+.list-group-item h5{
+    font-weight: 600;
+    margin-left: 75px;
+    margin-top: -30px;
+}
+.member_pic{
+    padding: 10px;
+}
+.listLeft{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.listRight{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* query media part for 320px */
+@media screen and ( max-width: 320px ) {
+    .flowContent{
+        margin-top: 100px;
+    }
+    .menuList{
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+}
+
+/*for inner.index */
+.flowContent2{
+    margin-top: 65px;
+    margin-left: -5px;
+}
+.title h4 {
+    text-align: left;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.inner-text p{
+    margin-left: 5px;
+    text-align: justify;
+    text-justify: auto;
+    width: 90%;
+}
+hr.carved {
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 2px;
+    margin: 1.4em 0;
+    border: none;
+    background: #ddd;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0.5, rgb(221,221,221)),
+            color-stop(0.5, rgb(255,255,255))
+    );background-image: -moz-linear-gradient(
+        center top,
+        rgb(221,221,221) 50%,
+        rgb(255,255,255) 50%
+);
+}
+.editorInfo{
+    margin-left: 5px;
+    margin-top: -10px;
+    list-style: none;
+}
+.editorInfo img {
+    float:left;
+    max-width: 35px;
+    margin-top: -7px;
+}
+.editorName{
+    margin-left: 15px;
+    margin-top: 10px;
+}

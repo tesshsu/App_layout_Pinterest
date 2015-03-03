@@ -19,7 +19,7 @@
 <div class="container-fluid">
     <div class=" panel panel-info">
        <div class="row topInside">
-           <div class="logo col-xs-3"><img src="img/logo_default.png" alt="logo_default" /></div>
+           <div class="logo col-xs-3"><a href="index.html"><img src="img/back.png" alt="logo_default" /></a></div>
            <div class="col-xs-4"></div>
            <div class="menuList col-xs-5">
                <ul class="nav nav-pills">
@@ -30,33 +30,26 @@
            </div>
        </div>
     </div>
-    <!-- start combination flow list part-->
+    <!-- start Contentflow text part-->
+    <div class=" flowContent2">
+          <div class=" row">
 
-      <div ng-app="galleryList" class=" flowContent">
-          <div ng-controller="ListCtrl" class=" col-xs-6 listLeft">
-              <div  ng-repeat="item in pins" class="list-group">
-                  <a href="inner.html" class="list-group-item"><img ng-src="{{item.photo}}" class="img-responsive" src="img/list/1.jpg"/></a>
-                  <a href="inner.html" class="list-group-item"><p>{{item.what}}</p></a>
-                  <a href="inner.html" class="list-group-item"><img ng-src="{{item.face}}" class="member_pic img-responsive" src="img/member/1.png"/>
-                                                   <h5>{{item.who}}</h5></a>
-              </div>
+              <ul  class="list-group">
+                  <li><img class="inner-image" src="img/inner/1.jpg"/></li>
+                  <li class="title"><h4>Brunch this weekend?</h4></li>
+                  <li class="inner-text"><p>No technical skills required.
+                      No installations or additional tools.
+                      Just upload some app screenshots, choose a device frame from our library and easily add interaction and annotations.
+                      Use the latest device frames from Apple, Google, Samsung, LG, Motorola, Sony, BlackBerry, Amazon, etc.
+                      All frames are high quality and have transparent backbround so that your demo looks good in any environment.</p></li>
+                  <hr class="carved"/>
+                  <li class="editorInfo"><img class="img-circle img-responsive" src="img/member/1.jpg"/>
+                      <span class="editorName">Melanie</span></li>
+              </ul>
           </div>
-          <div ng-controller="ListrightCtrl" class="col-xs-6 listRight">
-              <div ng-repeat="item in pins" class="list-group">
-                  <a href="#" class="list-group-item"><img ng-src="{{item.photo}}" class="img-responsive" src="img/list/1.jpg"/></a>
-                  <a href="#" class="list-group-item"><p>{{item.what}}</p></a>
-                  <a href="#" class="list-group-item"><img ng-src="{{item.face}}" class="member_pic img-circle" src="img/member/1.png"/>
-                                                   <h5>{{item.who}}</h5></a>
-              </div>
-          </div>
-      </div>
+    </div>
 
-
-
-
-
-
-    <!-- end of start combination flow list part-->
+    <!-- end of  Contentflow text part-->
 
 
 </div>
