@@ -5,15 +5,15 @@
     <title>Demo custome Colume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <!--css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/pinterest_layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pinterest_layout.css" >
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
     <!-- Fontawesome Icon font -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/Font-Awesome/css/font-awesome.min.css">
 	</head>
 <body id="bodyall">
 
-<div class="container-fluid">
+<div ng-app="tabsDemo1" class="container-fluid">
     <div class=" panel panel-info">
        <div class="row topInside">
            <div class="logo col-xs-3"><a href="inner.html"><img src="img/back.png" alt="logo_default" /></a></div>
@@ -37,59 +37,61 @@
     <hr class="carved"/>
     <!-- slide menu part-->
     <div ng-controller="AppCtrl" class="tabsdemoStaticTabs sample">
-        <md-tabs class="md-accent" md-selected="data.selectedIndex">
-            <md-tab id="tab1" aria-controls="tab1-content">
-                Item One
-            </md-tab>
-            <md-tab id="tab2" aria-controls="tab2-content"
-                    ng-disabled="data.secondLocked">
-                {{data.secondLabel}}
-            </md-tab>
-            <md-tab id="tab3" aria-controls="tab3-content">
-                Item Three
-            </md-tab>
-        </md-tabs>
-        <ng-switch on="data.selectedIndex" class="tabpanel-container">
-            <div role="tabpanel"
-                 id="tab1-content"
-                 aria-labelledby="tab1"
-                 ng-switch-when="0"
-                 md-swipe-left="next()"
-                 md-swipe-right="previous()" >
-                View for Item #1<br/>
-                data.selectedIndex = 0
-            </div>
-            <div role="tabpanel"
-                 id="tab2-content"
-                 aria-labelledby="tab2"
-                 ng-switch-when="1"
-                 md-swipe-left="next()"
-                 md-swipe-right="previous()" >
-                View for {{data.secondLabel}}<br/>
-                data.selectedIndex = 1
-            </div>
-            <div role="tabpanel"
-                 id="tab3-content"
-                 aria-labelledby="tab3"
-                 ng-switch-when="2"
-                 md-swipe-left="next()"
-                 md-swipe-right="previous()" >
-                View for Item #3<br/>
-                data.selectedIndex = 2
-            </div>
-        </ng-switch>
-        <div class="after-tabs-area" layout="row" layout-sm="column" layout-margin layout-align="left center">
-            <md-input-container>
-                <label for="selectedIndex">Selected Index</label>
-                <input type="number" id="selectedIndex" ng-model="data.selectedIndex">
-            </md-input-container>
-            <div flex></div>
-            <span>Item Two: </span>
-            <md-checkbox ng-model="data.secondLocked" aria-label="Disabled">
-                Disabled
-            </md-checkbox>
+    <md-tabs class="md-accent" md-selected="data.selectedIndex">
+      <md-tab id="tab1" aria-controls="tab1-content">
+        Item One
+      </md-tab>
+      <md-tab id="tab2" aria-controls="tab2-content"
+              ng-disabled="data.secondLocked">
+        {{data.secondLabel}}
+      </md-tab>
+      <md-tab id="tab3" aria-controls="tab3-content">
+        Item Three
+      </md-tab>
+    </md-tabs>
+    <ng-switch on="data.selectedIndex" class="tabpanel-container">
+        <div role="tabpanel"
+             id="tab1-content"
+             aria-labelledby="tab1"
+             ng-switch-when="0"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+            View for Item #1<br/>
+            data.selectedIndex = 0
         </div>
+        <div role="tabpanel"
+             id="tab2-content"
+             aria-labelledby="tab2"
+             ng-switch-when="1"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+            View for {{data.secondLabel}}<br/>
+            data.selectedIndex = 1
+        </div>
+        <div role="tabpanel"
+             id="tab3-content"
+             aria-labelledby="tab3"
+             ng-switch-when="2"
+             md-swipe-left="next()"
+             md-swipe-right="previous()" >
+            View for Item #3<br/>
+            data.selectedIndex = 2
+        </div>
+    </ng-switch>
+    <div class="after-tabs-area" layout="row" layout-sm="column" layout-margin layout-align="left center">
+        <md-input-container>
+          <label for="selectedIndex">Selected Index</label>
+          <input type="number" id="selectedIndex" ng-model="data.selectedIndex">
+        </md-input-container>
+        <div flex></div>
+        <span>Item Two: </span>
+        <md-checkbox ng-model="data.secondLocked" aria-label="Disabled">
+          Disabled
+        </md-checkbox>
     </div>
+</div>
+
+View for Item #1
     ITEM ONE
     ITEM TWO
     ITEM THREE
@@ -100,11 +102,19 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
-    <script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
-    <script src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    
+    
     <script src="bower_components/angular-material/angular-material.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
     <script src="js/tab.js"></script>
 </body>
 </html>
