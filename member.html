@@ -36,17 +36,17 @@
     <!-- end of  Contentflow member part-->
     <hr class="carved"/>
     <!-- slide menu part-->
+   <div class="slideMenu row">
     <div ng-controller="AppCtrl" class="tabsdemoStaticTabs sample">
     <md-tabs class="md-accent" md-selected="data.selectedIndex">
       <md-tab id="tab1" aria-controls="tab1-content">
-        Item One
+       Profile
       </md-tab>
-      <md-tab id="tab2" aria-controls="tab2-content"
-              ng-disabled="data.secondLocked">
-        {{data.secondLabel}}
+      <md-tab id="tab2" aria-controls="tab2-content">
+       Issues
       </md-tab>
       <md-tab id="tab3" aria-controls="tab3-content">
-        Item Three
+       uploads
       </md-tab>
     </md-tabs>
     <ng-switch on="data.selectedIndex" class="tabpanel-container">
@@ -56,8 +56,24 @@
              ng-switch-when="0"
              md-swipe-left="next()"
              md-swipe-right="previous()" >
-            View for Item #1<br/>
-            data.selectedIndex = 0
+            </br>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            </br>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-info"></i></span>
+                <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+            </br>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember this change?
+                </label>
+            </div>
+            </br>
+            <button type="submit" class="btn btn-default">Save</button>
         </div>
         <div role="tabpanel"
              id="tab2-content"
@@ -65,8 +81,21 @@
              ng-switch-when="1"
              md-swipe-left="next()"
              md-swipe-right="previous()" >
-            View for {{data.secondLabel}}<br/>
-            data.selectedIndex = 1
+            </br>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="badge">14</span>
+                    The gabage is not clean
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">5</span>
+                    The swimming pool is dirty
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">20</span>
+                    We need more guardian
+                </li>
+            </ul>
         </div>
         <div role="tabpanel"
              id="tab3-content"
@@ -74,27 +103,30 @@
              ng-switch-when="2"
              md-swipe-left="next()"
              md-swipe-right="previous()" >
-            View for Item #3<br/>
-            data.selectedIndex = 2
-        </div>
+            </br>
+
+                <div class=" col-xs-6 listLeft">
+                    <div class="list-group">
+                        <a href="inner.html" class="list-group-item"><img class="img-responsive" src="img/list/1.jpg"/></a>
+                        <a href="inner.html" class="list-group-item"><p>melanie</p></a>
+                        <a href="inner.html" class="list-group-item"><img class="member_pic img-responsive" src="img/member/1.png"/>
+                            <h5>where are you going?</h5></a>
+                    </div>
+                </div>
+            <div class=" col-xs-6 Right">
+                <div class="list-group">
+                    <a href="inner.html" class="list-group-item"><img class="img-responsive" src="img/list/6.jpg"/></a>
+                    <a href="inner.html" class="list-group-item"><p>jason</p></a>
+                    <a href="inner.html" class="list-group-item"><img class="member_pic img-responsive" src="img/member/3.png"/>
+                        <h5>where are you going?</h5></a>
+                </div>
+            </div>
+
     </ng-switch>
-    <div class="after-tabs-area" layout="row" layout-sm="column" layout-margin layout-align="left center">
-        <md-input-container>
-          <label for="selectedIndex">Selected Index</label>
-          <input type="number" id="selectedIndex" ng-model="data.selectedIndex">
-        </md-input-container>
-        <div flex></div>
-        <span>Item Two: </span>
-        <md-checkbox ng-model="data.secondLocked" aria-label="Disabled">
-          Disabled
-        </md-checkbox>
-    </div>
+</div>
 </div>
 
-View for Item #1
-    ITEM ONE
-    ITEM TWO
-    ITEM THREE
+
 
 
 </div>
@@ -104,17 +136,13 @@ View for Item #1
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Twitter Bootstrap -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
     <script src="bower_components/hammerjs/hammer.min.js"></script>
-    
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-touch/angular-touch.min.js"></script>
     <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-    
-    
     <script src="bower_components/angular-material/angular-material.js"></script>
-
     <script src="js/tab.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

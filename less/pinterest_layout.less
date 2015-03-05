@@ -2,7 +2,7 @@
 this is generally screen size for google Nexus 5 360*640px
 *************************/
 
-@import "_angularMaterial";
+
 
 #bodyall{
     font-family: Microsoft JhengHei;
@@ -41,17 +41,6 @@ this is generally screen size for google Nexus 5 360*640px
 	border-radius: 5px;
   }
 }
-.list-group-item{
-  padding: 0;
-  p{
-	padding: 10px;
-  }
-  h5{
-	font-weight: 600;
-	margin-left: 75px;
-	margin-top: -30px;
-  }
-}
 
 .member_pic{
   padding: 10px;
@@ -69,7 +58,80 @@ this is generally screen size for google Nexus 5 360*640px
 @media screen and ( max-width: 320px ) {
 	.container-fluid{
 	  margin-top: 0;
-	} 
+	}
+  .panel{
+    margin-top: 0px;
+  }
+  .nav-pills li img{
+    width: 15px;
+  }
+  .flowContent2{
+    margin-top: 37px;
+  }
+}
+/* for inner page*/
+
+.flowContent2{
+  margin-top: 67px;
+  margin-left: -5px;
+}
+.title{
+  margin-left: 5px;
+}
+.inner-text{
+  margin-left: 5px;
+  text-align:left;
+}
+hr.carved {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 2px;
+  margin: 1.4em 0;
+  border: none;
+  background: #ddd;
+  background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0.5, rgb(221,221,221)),
+          color-stop(0.5, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+          center top,
+          rgb(221,221,221) 50%,
+          rgb(255,255,255) 50%
+  );
+}
+.editorInfo{
+  margin-left: 5px;
+  margin-top: -17px;
+  img{
+    max-width: 45px;
+  }
+  p{
+    margin-left: 60px;
+    margin-top: -30px;
+    font-weight: 700;
+  }
+}
+/* member part css*/
+.memberTop{
+  margin-top: 100px;
+}
+.member_name{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: -70px;
+  margin-top: 20px;
+}
+.col-xs-5{
+  width: 40%;
 }
 
-
+.slideMenu{
+  margin-right: 6px;
+}
+.list-group-item{
+  color: #666;
+}
