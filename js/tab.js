@@ -1,4 +1,4 @@
-angular.module('tabsDemo1', ['ngMaterial'] )
+angular.module('tabsDemo1', ['ngMaterial','ngTouch'] )
     .controller('AppCtrl', function( $scope ) {
         $scope.data = {
             selectedIndex : 0,

@@ -1,4 +1,4 @@
-var app = angular.module('galleryList', ['ngAnimate']);
+var app = angular.module('galleryList', ['ngAnimate','ngTouch']);
 
   app.controller('ListCtrl', function($scope){
     $scope.pins = [
